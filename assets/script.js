@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     const currentPath = window.location.pathname; // Get the Path from url
-    const directory = currentPath.split('/')[2]; // Get the current directory
+    const directory = currentPath.split('/')[1]; // Get the current directory
 
     let navbarPath = './navbar.html'; // set default path
 
@@ -35,8 +35,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const level = pathParts.length;
 
     // Adjust the path based on directory depth
-    const stylePath = '../'.repeat(level - 1) + 'assets/style.css';
-    const scriptPath = '../'.repeat(level - 1) + 'script.js';
+    const stylePath = '../'.repeat(level - 2) + 'assets/style.css';
+    const scriptPath = '../'.repeat(level - 2) + 'assets/script.js';
 
 
     // Dynamically create and insert link and script elements
