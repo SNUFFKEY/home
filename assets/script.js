@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     const currentPath = window.location.pathname; // Get the Path from url
-    const directory = currentPath.split('/')[1]; // Get the current directory
+    const directory = currentPath.split('/')[2]; // Get the current directory
 
     let navbarPath = './navbar.html'; // set default path
 
