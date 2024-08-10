@@ -1,18 +1,4 @@
 
-/* h1 {
-
-  color : #f4f7fa;
-  padding: 200x;
-
-
-  
-}
-h2 {
-
-color : #f4f7fa;
-
-} */
-
 html {
   height: 100%;
   width: 100%;
@@ -20,16 +6,11 @@ html {
 
 body {
     font-size : 31px;
-    /* background: #171616;  */
+    background: black; 
     /* transform: scale(1.3); 
     transform-origin: left; */
 }
 
-/* p {
-    font-family: 'Lato', Arial, sans-serif;
-
-    color: #e6e6e6;
-} */
 
 
 main{
@@ -44,7 +25,7 @@ main{
 .navbar ul{
 
   list-style-type: none; /* removes the bullet points */
-  background-color: rgb(94, 94, 94);
+  background-color: black;
   padding: 0px;
   margin: 0px;
   overflow: hidden;
@@ -53,19 +34,23 @@ main{
 
 .navbar a{
 
-  color: white;
+  color: green;
   text-decoration: none;
   padding: 15px;
   display: block;
   text-align: center;
   font-size: 18px;
   font-weight: bold;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  font: 1.3rem Inconsolata, monospace;
+
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif */
 }
 
 
 .navbar a:hover{
-  color: grey;
+  color: green;
+  text-shadow: 0 0 11px #C8C8C8;
+
   /* background-color: rgb(82, 82, 82); */
   transition: color 0.3s;
 }
@@ -101,6 +86,9 @@ main{
 
 
 .titleHeading {
+  color: green;
+  font: 1.3rem Inconsolata, monospace;
+  text-shadow: 0 0 5px #C8C8C8;
   text-align: center;
 
 }
@@ -108,33 +96,39 @@ main{
 .container {
 
   display: flex;
-  justify-content: center;
+  position: absolute;
+  text-align: justify;
+  top: 240px;
+  left: 200px;
+  
 
 }
 
-a.Linkedinimg {
+a.LinkImages {
 
-  color :black;
+  color :rgb(44, 42, 42);
   text-decoration: none; /* remove underline */
   transition: color 0.3s; /* smooth transition */
 }
 
-a.Linkedinimg:hover {
+a.LinkImages:hover {
 
-  color : grey;
+  color : green;
 
 }
 
 
 a.blog_links {
 
-  color: black;
+  color: green;
+  font: 1.3rem Inconsolata, monospace;
+
 }
 
 a.blog_links:hover {
 
   color: grey;
-  transition: color 0.3s;
+  transition: color 0.2s;
 
 }
 
@@ -148,10 +142,42 @@ a.blog_links:hover {
   -moz-user-select: none;
   -ms-user-select: none;
   -o-user-select: none;
+  position: absolute;
+  top: 600px;
+  left: 260px;
+
+
 }
 
-.navbarImg {
+.WHOAMI h1 {
 
+  color: green;
+  font: 1.3rem Inconsolata, monospace;
+  font-size: 40px;
+  text-shadow: 0 0 5px #C8C8C8;
 
   
 }
+
+.aboutmecontainer p{
+
+  color: green;
+  position: absolute;
+  left: 10px;
+  font: 1.3rem Inconsolata, monospace;
+  text-shadow: 0 0 3px #C8C8C8;
+  word-wrap: break-word; /* Breaks long words and wraps them to the next line */
+  overflow-wrap: break-word; /* Ensures that long words break correctly */
+  white-space: normal; /* Allows the text to wrap naturally */
+}
+
+.aboutmecontainer{
+
+  position: relative;
+  top: 130px; /* Move 50px down from its normal position */
+  left: 600px; /* Move 100px to the right from its normal position */
+  width: 700px;
+  border: 1px solid #000;
+  padding: 10px;
+}
+
