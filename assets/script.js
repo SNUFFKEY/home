@@ -35,8 +35,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const level = pathParts.length;
 
     // Adjust the path based on directory depth
-    const stylePath = '../'.repeat(level - 2) + 'assets/style.css';
-    const scriptPath = '../'.repeat(level - 2) + 'assets/script.js';
+    const stylePath = '../'.repeat(level - 3) + 'assets/style.css';
+    const scriptPath = '../'.repeat(level - 3) + 'assets/script.js';
 
 
     // Dynamically create and insert link and script elements
